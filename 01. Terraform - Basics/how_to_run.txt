@@ -1,13 +1,12 @@
-Step1: terraform init
-       it will download the mentioned provider plugin.
+Step1: terraform init  ---> it will download the mentioned provider plugin.
 
-Step2: terraform plan
-       it will show the desire state which are going to be add/change/destroy based on the terraform file 
+Step2: terraform plan  --> it will show the desire state which are going to be add/change/destroy based on the terraform file 
 
-Step3: terraform apply
-        it will excute the terraform file.
+Step3: terraform apply ---> it will excute the terraform file.
 
-Step4: after verifying your changes make sure you need to delete all the resources created in AWS.
+Step4: after verifying your changes in aws console ec2 section,
+       make sure you need to delete all the resources created in AWS.
+       
        terraform destroy  ----> it will destroy all the resources mentioned in terraform file
        terraform destroy -target <<resource_name.resource_given name>> --> it will destroy mentioned resource
 
