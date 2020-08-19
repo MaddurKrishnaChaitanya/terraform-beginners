@@ -1,8 +1,8 @@
 # provider info with authentication
 provider "aws" {
   region     = "ap-south-1"
-  access_key = "your access key"
-  secret_key = "your secret_key"
+  access_key = var.accesskey # value needs to set has environment varibles with key TF_VAR_accesskey
+  secret_key = var.secretkey # value needs to set has environment varibles with key TF_VAR_secretkey
 }
 
 # resource::: EC2 instance with jenkins server
