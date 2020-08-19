@@ -2,7 +2,6 @@
 This is the practicals for terraform beginners 
 
 **Terraform**
-**=========**
 - Website: https://www.terraform.io
 - Forums: [HashiCorp Discuss](https://discuss.hashicorp.com/c/terraform-core)
 - Documentation: [https://www.terraform.io/docs/](https://www.terraform.io/docs/)
@@ -23,6 +22,5 @@ The key features of Terraform are:
 
 - **Change Automation:** Complex changesets can be applied to your infrastructure with minimal human interaction. With the previously mentioned execution plan and resource graph, you know exactly what Terraform will change and in what order, avoiding many possible human errors.
 
-- **Terraform Workflow**
-- **=======================**
+**Terraform Workflow**
 - terraform file(*.tf) ---> terraform init --> terraform plan ---> terraform apply 
