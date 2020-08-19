@@ -1,10 +1,12 @@
 # provider info with authentication
 provider "aws" {
-  alias = "mumbai" # used becoz already default alias used in myfirst-ec2.tf
   region     = "ap-south-1"
   access_key = var.accesskey # value needs to set has environment varibles with key TF_VAR_accesskey
   secret_key = var.secretkey # value needs to set has environment varibles with key TF_VAR_secretkey
   version  = ">= 2.7"
+  #version  = "<= 2.7"
+  #version  = "~> 2.0"
+  #version  = ">=2.8,<=2.10"
 }
 
 # resource::: EC2 instance with jenkins server

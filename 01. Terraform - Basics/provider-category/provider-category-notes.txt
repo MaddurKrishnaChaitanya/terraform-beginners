@@ -1,0 +1,38 @@
+in terraform there are 2 major catagories for terraform providers.
+
+1. Hashicorp Distributed providers
+2. 3rd party/community providers
+
+1. Hashicorp Distributed providers::
+-------------------------------------
+Hashicorp Distributed providers downloaded automatically during terraform init.
+
+These providers are primarily supported by the cloud vendor in close collaboration with HashiCorp, 
+and are tested by HashiCorp.
+
+2. 3rd party/community providers::
+----------------------------------
+3rd party/community providers cannot download automatically during terraform init.
+
+These providers built by the community of Terraform users and vendors 
+and are not tested nor officially maintained by HashiCorp.
+
+usecase for 3rd party/community providers:::
+---------------------------------------------
+--> official provider do not support specific funtionality
+--> some organization can have their own platform
+
+how to configure 3rd party/community providers::
+-------------------------------------------------
+3rd party providers must be manually installed/download.
+after download/install 3rd party providers, their plugin executable must be placed inside user plugin
+
+Windows ----> <<user_directory>>\%APPDATA%\terraform.d\plugins
+Other OS ---> ~/.terraform.d/plugins
+
+<<<<<<<<example pending>>>>>>
+
+
+
+
+
