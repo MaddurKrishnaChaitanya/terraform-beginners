@@ -1,0 +1,3 @@
+use "terraform plan" and see the attribute instance_type is changed occordingly based on different assignment.
+
+no need to run terraform apply

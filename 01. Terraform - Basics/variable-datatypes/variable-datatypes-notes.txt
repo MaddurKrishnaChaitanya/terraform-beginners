@@ -1,0 +1,14 @@
+the type argument in a variable block allows you to restrict the type of value
+
+Ex:
+
+variable "instance_type"{
+    type = string
+}
+
+in above example we are restricting the value of instance_type as type string. so other datatype not allowed.
+if we do, it shows error at terraform execution.
+
+if no type defined, any type of value accepted...
+
+

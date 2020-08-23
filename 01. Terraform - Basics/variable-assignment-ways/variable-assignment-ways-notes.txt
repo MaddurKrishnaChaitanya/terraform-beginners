@@ -1,0 +1,32 @@
+Variables In Terraform can be assigned values in multiple ways
+
+1. Environment Variables  ==> needs to set in environment varibales
+variable name prefix with "TF_VAR"
+
+Name: TF_VAR_variablename
+Value: <<value>>
+
+Ex: 
+Name: TF_VAR_instance_type
+Value: t2.large
+
+in my every example i assigned  access_key and secret_key variable values using enviorment var 
+becoz these are sceret keys which should not expose to piblic 
+
+2. Command Line Flags ==> use it will override default value( not recommended)
+Ex:
+terraform plan -var="instance_type=t2.small"
+
+3. From a File ==> recommended way
+Ex:
+filename::: terraform.tfvars
+
+by default terraform looks file name with "terraform.tfvars". if we want our own/custom name then you need to
+explicitly mention in terraform cli as below
+Ex: terraform plan -var-file="custom. tfvars"
+
+4. Variable Defaults 
+Ex:
+variable "instance_type"{
+    default = "t2.micro"
+}
