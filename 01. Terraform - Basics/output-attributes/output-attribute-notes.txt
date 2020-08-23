@@ -1,0 +1,25 @@
+terraform can output the attributes of a resource with the output values
+
+this can be helpful just to out the valuable information or feed the information to external software
+
+An outputed attributes can not only be used for the user reference but it can also be act as input other resource created via terraform
+
+Ex:- Use "output" to display the public ip address of an AWS resource
+
+resource "aws_instance" "jenkinsServer" {
+  ami           = "ami-0ebc1ac48dfd14136" // AMI id inside above mentioned region
+  instance_type = "t2.micro" // instance type
+}
+
+output "publicIp"{
+    value = "${aws_instance.jenkinsServer.public_ip}"
+}
+
+you can refer any attribute with the following elements
+
+aws_instance ===> resource type
+jenkinsServer==> resource name
+public_ip ==> attribute name
+
+
+you can also use the attributes in script, useful for instance to start automation scripts after infrastructure provisioned

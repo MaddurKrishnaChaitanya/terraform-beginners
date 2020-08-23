@@ -1,0 +1,3 @@
+Use variables to hide the secrets
+Use variables for elements that might change
+Use variables to make it yourself easier to reuse in your terraform file

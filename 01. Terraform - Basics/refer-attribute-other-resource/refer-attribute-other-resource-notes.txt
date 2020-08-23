@@ -1,0 +1,3 @@
+Example/Usecase1:
+-----------------
+create elastic ip and attach to other resource(ec2 instance)
