@@ -24,3 +24,16 @@ The key features of Terraform are:
 
 **Terraform Workflow**
 - terraform file(*.tf) ---> terraform init --> terraform plan ---> terraform apply 
+
+**Terraform Commands***
+- terraform init --->
+- terraform plan --->
+- terraform apply -->
+- terraform destroy -->
+- terraform destroy -target <<resource_name>>  -->
+- terraform output <<output_variable_name>> -->
+- terraform show -->
+- terraform fmt -->
+- terraform validate -->
+- TF_LOG -->
+- TF_LOG_PATH -->
